@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {createRoot} from 'react-dom/client';
-import {ArrowRight, BriefcaseBusiness, CheckCircle2, ChevronDown, ExternalLink, FileText, Linkedin, Mail, Menu, X, Database, ShieldCheck, Users, BarChart3, Layers3} from 'lucide-react';
+import {ArrowRight, BriefcaseBusiness, CheckCircle2, ChevronDown, ExternalLink, FileText, Mail, Menu, X, Database, ShieldCheck, Users, BarChart3, Layers3} from 'lucide-react';
 import './styles.css';
 
 const work = [
