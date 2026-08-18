@@ -154,8 +154,7 @@ function App(){
 
     </div>
   </div>
-</section><div className="container education-grid"><div><p className="section-kicker">05 · EDUCATION & CERTIFICATION</p><h2>Continuous learning, applied practically.</h2></div><div className="edu-list"><div><b>Customer Success Manager / Technical Account Manager & Client Onboarding Certification</b><span>Digital Witch IT Support · 2024</span></div><div><b>B.Sc. Biochemistry</b><span>University of Agriculture, Makurdi · 2014–2018</span></div><div><b>Executive Assistant & IT Support Certification</b><span>Digital Witch IT Support · 2023</span></div><div><b>Advanced Data Entry & Excel</b><span>Moon's Virtual Academy · 2023</span></div></div></div></section>
-
+</section>
       <section id="contact" className="contact"><div className="container contact-inner"><div><p className="section-kicker">06 · CONTACT</p><h2>Let's build better customer experiences.</h2><p>Open to Customer Success, Onboarding and Technical Account Management opportunities.</p></div><div className="contact-links"><a href="mailto:Goodnesschizurum41@gmail.com"><Mail size={20}/><span>Email me</span><ArrowRight/></a><a href="https://linkedin.com/in/goodness-nwafor" target="_blank" rel="noreferrer"><span style={{fontWeight:800,fontSize:'18px'}}>in</span><span>LinkedIn</span><ArrowRight/></a></div></div></section>
     </main>
 
