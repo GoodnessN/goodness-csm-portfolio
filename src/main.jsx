@@ -67,16 +67,123 @@ function App(){
     </div></header>
 
     <main>
-      <section id="home" className="hero"><div className="container hero-grid">
-        <div className="hero-copy">
-          <div className="eyebrow"><span className="status"></span> CUSTOMER SUCCESS · ONBOARDING · TAM</div>
-          <h1>Turning customer complexity into <em>clear outcomes.</em></h1>
-          <p className="hero-lead">I'm <strong>Goodness Chizurum Nwafor</strong>, a Customer Success and Onboarding professional focused on adoption, retention, account health and practical customer enablement.</p>
-          <div className="hero-actions"><button className="primary" onClick={()=>nav('work')}>Explore my work <ArrowRight size={18}/></button><a className="secondary" href="/Goodness_Nwafor_CSM_Resume_Final.pdf" target="_blank">View résumé <ExternalLink size={16}/></a></div>
-          <div className="proof"><div><strong>98%</strong><span>on-time resolution</span></div><div><strong>50%</strong><span>customer satisfaction improvement</span></div><div><strong>3+</strong><span>years customer-facing experience</span></div></div>
+      <section id="home" className="hero">
+  <div className="container hero-grid">
+
+    <div className="hero-copy">
+
+      <div className="eyebrow">
+        <span className="status"></span>
+        CUSTOMER SUCCESS · ONBOARDING · TAM
+      </div>
+
+      <h1>
+        I help customers <em>adopt, stay and grow.</em>
+      </h1>
+
+      <p className="hero-lead">
+        I'm <strong>Goodness Chizurum Nwafor</strong>, a Customer Success
+        and Onboarding professional who turns customer needs, account-health
+        signals and operational complexity into clear next steps and
+        measurable outcomes.
+      </p>
+
+      <div className="hero-actions">
+        <button
+          className="primary"
+          onClick={() => nav('work')}
+        >
+          Explore my work <ArrowRight size={18} />
+        </button>
+
+        <a
+          className="secondary"
+          href="/Goodness_Nwafor_CSM_Resume_Final.pdf"
+          target="_blank"
+          rel="noreferrer"
+        >
+          View résumé <ExternalLink size={16} />
+        </a>
+      </div>
+
+      <div className="hero-proof-label">
+        WHAT I FOCUS ON
+      </div>
+
+      <div className="proof">
+
+        <div>
+          <strong>Onboarding</strong>
+          <span>From readiness to first value</span>
         </div>
-        <div className="hero-card"><div className="card-glow"></div><div className="profile-mark">GCN</div><p className="card-label">CUSTOMER SUCCESS PROFILE</p><h2>Proactive. Data-informed. Outcome-oriented.</h2><div className="signal"><span>01</span><div><b>Health</b><small>Usage · sentiment · risk</small></div></div><div className="signal"><span>02</span><div><b>Adoption</b><small>Enablement · first value</small></div></div><div className="signal"><span>03</span><div><b>Retention</b><small>Stakeholders · value · renewal</small></div></div></div>
-      </div></section>
+
+        <div>
+          <strong>Account Health</strong>
+          <span>Signals, risk and retention</span>
+        </div>
+
+        <div>
+          <strong>TAM</strong>
+          <span>Technical coordination and outcomes</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div className="hero-card">
+
+      <div className="card-glow"></div>
+
+      <div className="profile-mark">
+        GCN
+      </div>
+
+      <p className="card-label">
+        CUSTOMER SUCCESS PROFILE
+      </p>
+
+      <h2>
+        Structured thinking. Human communication. Customer outcomes.
+      </h2>
+
+      <div className="signal">
+        <span>01</span>
+        <div>
+          <b>Onboard</b>
+          <small>Readiness · enablement · first value</small>
+        </div>
+      </div>
+
+      <div className="signal">
+        <span>02</span>
+        <div>
+          <b>Understand</b>
+          <small>Usage · sentiment · stakeholders</small>
+        </div>
+      </div>
+
+      <div className="signal">
+        <span>03</span>
+        <div>
+          <b>Act</b>
+          <small>Risk · adoption · retention</small>
+        </div>
+      </div>
+
+      <div className="card-footer">
+        <span>OPEN TO OPPORTUNITIES</span>
+
+        <a href="mailto:Goodnesschizurum41@gmail.com">
+          Start a conversation
+          <ArrowRight size={14} />
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
       <section className="metrics"><div className="container metric-grid"><div><span>FOCUS</span><strong>Customer lifecycle</strong><p>From pre-boarding to retention.</p></div><div><span>METHOD</span><strong>Evidence → action</strong><p>Health signals inform priorities.</p></div><div><span>STYLE</span><strong>Human + structured</strong><p>Clear communication with disciplined follow-through.</p></div></div></section>
 
