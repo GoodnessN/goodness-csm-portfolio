@@ -92,7 +92,69 @@ function App(){
 
       <section id="skills" className="section soft"><div className="container"><div className="section-top"><div><p className="section-kicker">04 · CAPABILITIES</p><h2>What I bring to a CS team.</h2></div></div><div className="skills-grid">{skills.map(([t,d],i)=>{const Icon=[Users,ShieldCheck,Layers3,Database,BarChart3,BriefcaseBusiness][i]; return <div className="skill" key={t}><Icon size={21}/><h3>{t}</h3><p>{d}</p></div>})}</div><div className="tools"><p>TOOLS & PLATFORMS</p><div>{tools.map(t=><span key={t}>{t}</span>)}</div></div></div></section>
 
-      <section className="section education"><div className="container education-grid"><div><p className="section-kicker">05 · EDUCATION & CERTIFICATION</p><h2>Continuous learning, applied practically.</h2></div><div className="edu-list"><div><b>Customer Success Manager / Technical Account Manager & Client Onboarding Certification</b><span>Digital Witch IT Support · 2024</span></div><div><b>B.Sc. Biochemistry</b><span>University of Agriculture, Makurdi · 2014–2018</span></div><div><b>Executive Assistant & IT Support Certification</b><span>Digital Witch IT Support · 2023</span></div><div><b>Advanced Data Entry & Excel</b><span>Moon's Virtual Academy · 2023</span></div></div></div></section>
+      <section className="section education">
+  <div className="container education-grid">
+
+    <div>
+      <p className="section-kicker">05 · EDUCATION & CERTIFICATION</p>
+      <h2>Continuous learning, applied practically.</h2>
+    </div>
+
+    <div className="edu-list">
+
+      <div>
+        <b>
+          Customer Success Manager / Technical Account Manager & Client
+          Onboarding Certification
+        </b>
+        <span>Digital Witch IT Support · 2024</span>
+
+        <a
+          className="certificate-link"
+          href="/Goodness%20Chizurum%20Nwafor%20csm%20Certificate.pdf"
+          target="_blank"
+          rel="noreferrer"
+        >
+          View CSM Certificate <ExternalLink size={14} />
+        </a>
+      </div>
+
+      <div>
+        <b>B.Sc. Biochemistry</b>
+        <span>University of Agriculture, Makurdi · 2014–2018</span>
+      </div>
+
+      <div>
+        <b>IT Support Certification</b>
+        <span>Digital Witch Support Community · 2023</span>
+
+        <a
+          className="certificate-link"
+          href="/Goodness%20Chizurum%20Nwafor%20Virtual%20Assistant%20certificate.pdf"
+          target="_blank"
+          rel="noreferrer"
+        >
+          View IT Support Certificate <ExternalLink size={14} />
+        </a>
+      </div>
+
+      <div>
+        <b>Data Entry & Virtual Assistant Certification</b>
+        <span>Moon's Virtual Academy · 2023</span>
+
+        <a
+          className="certificate-link"
+          href="/MVA3.0%20Bootcamp%20Certificates-images-0.jpg"
+          target="_blank"
+          rel="noreferrer"
+        >
+          View MVA Certificate <ExternalLink size={14} />
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section><div className="container education-grid"><div><p className="section-kicker">05 · EDUCATION & CERTIFICATION</p><h2>Continuous learning, applied practically.</h2></div><div className="edu-list"><div><b>Customer Success Manager / Technical Account Manager & Client Onboarding Certification</b><span>Digital Witch IT Support · 2024</span></div><div><b>B.Sc. Biochemistry</b><span>University of Agriculture, Makurdi · 2014–2018</span></div><div><b>Executive Assistant & IT Support Certification</b><span>Digital Witch IT Support · 2023</span></div><div><b>Advanced Data Entry & Excel</b><span>Moon's Virtual Academy · 2023</span></div></div></div></section>
 
       <section id="contact" className="contact"><div className="container contact-inner"><div><p className="section-kicker">06 · CONTACT</p><h2>Let's build better customer experiences.</h2><p>Open to Customer Success, Onboarding and Technical Account Management opportunities.</p></div><div className="contact-links"><a href="mailto:Goodnesschizurum41@gmail.com"><Mail size={20}/><span>Email me</span><ArrowRight/></a><a href="https://linkedin.com/in/goodness-nwafor" target="_blank" rel="noreferrer"><span style={{fontWeight:800,fontSize:'18px'}}>in</span><span>LinkedIn</span><ArrowRight/></a></div></div></section>
     </main>
