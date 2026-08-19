@@ -78,53 +78,51 @@ function App(){
       </div>
 
       <h1>
-        I help customers <em>adopt, stay and grow.</em>
+        I don't wait for the health score to turn red.
+        <em>I watch for the signals before the dashboard does.</em>
       </h1>
 
       <p className="hero-lead">
         I'm <strong>Goodness Chizurum Nwafor</strong>, a Customer Success
-        and Onboarding professional who turns customer needs, account-health
-        signals and operational complexity into clear next steps and
-        measurable outcomes.
+        professional combining technical fluency, customer empathy and
+        structured execution to help customers adopt, stay and grow.
       </p>
 
       <div className="hero-actions">
         <button
           className="primary"
-          onClick={() => nav('work')}
+          onClick={() => nav('about')}
         >
-          Explore my work <ArrowRight size={18} />
+          About me <ArrowRight size={18} />
         </button>
 
-        <a
+        <button
           className="secondary"
-          href="/Goodness_Nwafor_CSM_Resume_Final.pdf"
-          target="_blank"
-          rel="noreferrer"
+          onClick={() => nav('work')}
         >
-          View résumé <ExternalLink size={16} />
-        </a>
+          View my case studies <ArrowRight size={16} />
+        </button>
       </div>
 
       <div className="hero-proof-label">
-        WHAT I FOCUS ON
+        WHAT I BRING
       </div>
 
       <div className="proof">
 
         <div>
-          <strong>Onboarding</strong>
-          <span>From readiness to first value</span>
+          <strong>Technical fluency</strong>
+          <span>Systems · data · root causes</span>
         </div>
 
         <div>
-          <strong>Account Health</strong>
-          <span>Signals, risk and retention</span>
+          <strong>Customer empathy</strong>
+          <span>Adoption · relationships · outcomes</span>
         </div>
 
         <div>
-          <strong>TAM</strong>
-          <span>Technical coordination and outcomes</span>
+          <strong>Commercial thinking</strong>
+          <span>Health · retention · expansion</span>
         </div>
 
       </div>
@@ -144,14 +142,16 @@ function App(){
       </p>
 
       <h2>
-        Structured thinking. Human communication. Customer outcomes.
+        Technical thinking.
+        Human communication.
+        Customer outcomes.
       </h2>
 
       <div className="signal">
         <span>01</span>
         <div>
-          <b>Onboard</b>
-          <small>Readiness · enablement · first value</small>
+          <b>Detect</b>
+          <small>Health signals · usage · sentiment</small>
         </div>
       </div>
 
@@ -159,7 +159,7 @@ function App(){
         <span>02</span>
         <div>
           <b>Understand</b>
-          <small>Usage · sentiment · stakeholders</small>
+          <small>Root causes · stakeholders · goals</small>
         </div>
       </div>
 
@@ -167,12 +167,14 @@ function App(){
         <span>03</span>
         <div>
           <b>Act</b>
-          <small>Risk · adoption · retention</small>
+          <small>Adoption · retention · expansion</small>
         </div>
       </div>
 
       <div className="card-footer">
-        <span>OPEN TO OPPORTUNITIES</span>
+        <span>
+          OPEN TO OPPORTUNITIES
+        </span>
 
         <a href="mailto:Goodnesschizurum41@gmail.com">
           Start a conversation
