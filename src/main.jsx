@@ -58,7 +58,15 @@ function App(){
   />
 
  
-  </h2>
+  <p className="card-label">
+  CUSTOMER SUCCESS PROFILE
+</p>
+
+<h2>
+  Signals before symptoms.
+  Systems before scripts.
+  Outcomes before excuses.
+</h2>
  
     <div className="signal">
   <span>01</span>
