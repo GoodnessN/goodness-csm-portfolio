@@ -57,29 +57,40 @@ function App(){
     alt="Goodness Chizurum Nwafor"
   />
 
-  <p className="card-label">
-    CUSTOMER SUCCESS PROFILE
-  </p>
-
-  <h2>
-    Signals before symptoms.
-    Systems before scripts.
-    Outcomes before excuses.
+ 
   </h2>
-  <p className="card-label">
-    CUSTOMER SUCCESS PROFILE
-  </p>
+ 
+    <div className="signal">
+  <span>01</span>
+  <div>
+    <b>Onboard</b>
+    <small>Readiness · enablement · first value</small>
+  </div>
+</div>
 
-  <h2>
-    Signals before symptoms.
-    Systems before scripts.
-    Outcomes before excuses.
-  </h2>
-     <div className="signal"><span>01</span><div><b>Onboard</b><small>Readiness · enablement · first value</small></div></div><div className="signal"><span>02</span><div><b>Understand</b><small>Usage · sentiment · stakeholders</small></div></div><div className="signal"><span>03</span><div><b>Act</b><small>Risk · adoption · retention</small></div></div>
-     <div className="card-footer"><span>OPEN TO OPPORTUNITIES</span><a href="mailto:Goodnesschizurum41@gmail.com">Start a conversation <ArrowRight size={14}/></a></div>
-    </div>
-   </div></section>
+<div className="signal">
+  <span>02</span>
+  <div>
+    <b>Understand</b>
+    <small>Usage · sentiment · stakeholders</small>
+  </div>
+</div>
 
+<div className="signal">
+  <span>03</span>
+  <div>
+    <b>Act</b>
+    <small>Risk · adoption · retention</small>
+  </div>
+</div>
+
+<div className="card-footer">
+  <span>OPEN TO OPPORTUNITIES</span>
+  <a href="mailto:Goodnesschizurum41@gmail.com">
+    Start a conversation <ArrowRight size={14} />
+  </a>
+</div>
+</div>
    <section className="metrics"><div className="container metric-grid"><div><span>FOCUS</span><strong>Customer lifecycle</strong><p>From pre-boarding to retention.</p></div><div><span>METHOD</span><strong>Evidence → action</strong><p>Health signals inform priorities.</p></div><div><span>STYLE</span><strong>Human + structured</strong><p>Clear communication with disciplined follow-through.</p></div></div></section>
 
    <section id="meet-me" className="section meet-me"><div className="container meet-grid"><div><p className="section-kicker">MEET ME</p><h2>A quick hello, before the résumé.</h2><p className="meet-copy">60 seconds on how I think about customer success — no script, just how I actually work.</p><div className="meet-photo-wrap"><img src="/meet-me-photo.jpg" alt="Goodness Chizurum Nwafor working at a desk"/></div></div><div className="video-card"><video controls preload="metadata" poster="/meet-me-photo.jpg"><source src="/meet-me.mp4" type="video/mp4"/>Your browser does not support the video element.</video><div className="video-placeholder"><PlayCircle size={22}/><span>Meet Me video will appear here when the video file is uploaded.</span></div></div></div></section>
