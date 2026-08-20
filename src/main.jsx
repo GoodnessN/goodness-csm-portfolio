@@ -103,9 +103,45 @@ function App(){
 </section>
 
 <section className="metrics"><div className="container metric-grid"><div><span>FOCUS</span><strong>Customer lifecycle</strong><p>From pre-boarding to retention.</p></div><div><span>METHOD</span><strong>Evidence → action</strong><p>Health signals inform priorities.</p></div><div><span>STYLE</span><strong>Human + structured</strong><p>Clear communication with disciplined follow-through.</p></div></div></section>
+<section id="meet-me" className="section meet-me">
+  <div className="container meet-grid">
 
-   <section id="meet-me" className="section meet-me"><div className="container meet-grid"><div><p className="section-kicker">MEET ME</p><h2>A quick hello, before the résumé.</h2><p className="meet-copy">60 seconds on how I think about customer success — no script, just how I actually work.</p><div className="meet-photo-wrap"><img src="/meet-me-photo.jpg" alt="Goodness Chizurum Nwafor working at a desk"/></div></div><div className="video-card"><video controls preload="metadata" poster="/meet-me-photo.jpg"><source src="/meet-me.mp4" type="video/mp4"/>Your browser does not support the video element.</video><div className="video-placeholder"><PlayCircle size={22}/><span>Meet Me video will appear here when the video file is uploaded.</span></div></div></div></section>
+    <div>
+      <p className="section-kicker">MEET ME</p>
 
+      <h2>A quick hello, before the résumé.</h2>
+
+      <p className="meet-copy">
+        60 seconds on how I think about customer success — no script,
+        just how I actually work.
+      </p>
+
+      <div className="meet-photo-wrap">
+        <img
+          src="/meet-me-photo.jpg"
+          alt="Goodness Chizurum Nwafor"
+        />
+      </div>
+    </div>
+
+    <div className="video-card">
+      <div className="video-placeholder">
+        <PlayCircle size={42} />
+
+        <h3>Meet Me</h3>
+
+        <p>
+          I’ll share a little about who I am, how I think about
+          customer success, and what I bring to every customer relationship.
+        </p>
+
+        <span>Introduction video coming soon</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+   
    <section id="about" className="section"><div className="container two-col"><div><p className="section-kicker">01 · ABOUT ME</p><h2>I don't wait for the health score to turn red. I watch for the signals before the dashboard does.</h2></div><div className="body-copy">{aboutText.map(p=><p key={p}>{p}</p>)}<div className="quote">“Customer Success is not support with a friendlier title. It is the discipline of making customer value visible, measurable and repeatable.”</div><p className="about-cta"><strong>Curious what this looks like in practice?</strong> Check out my case studies below—or reach out and let's talk about your customers.</p></div></div></section>
 
    <section id="experience" className="section section-dark"><div className="container"><p className="section-kicker">02 · EXPERIENCE</p><div className="experience-head"><h2>Built around the customer lifecycle.</h2><p>Professional experience supported by practical training and case-based work.</p></div><div className="timeline">
