@@ -74,9 +74,7 @@ function App(){
     Signals before symptoms.
     Systems before scripts.
     Outcomes before excuses.
-  </h2>CUSTOMER SUCCESS PROFILE</p><h2>Signals before symptoms.
-Systems before scripts.
-Outcomes before excuses.</h2>
+  </h2>
      <div className="signal"><span>01</span><div><b>Onboard</b><small>Readiness · enablement · first value</small></div></div><div className="signal"><span>02</span><div><b>Understand</b><small>Usage · sentiment · stakeholders</small></div></div><div className="signal"><span>03</span><div><b>Act</b><small>Risk · adoption · retention</small></div></div>
      <div className="card-footer"><span>OPEN TO OPPORTUNITIES</span><a href="mailto:Goodnesschizurum41@gmail.com">Start a conversation <ArrowRight size={14}/></a></div>
     </div>
