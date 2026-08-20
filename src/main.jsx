@@ -100,7 +100,7 @@ function App(){
 </div>
 </div>
    </div>
-</div></section>
+</section>
 
 <section className="metrics"><div className="container metric-grid"><div><span>FOCUS</span><strong>Customer lifecycle</strong><p>From pre-boarding to retention.</p></div><div><span>METHOD</span><strong>Evidence → action</strong><p>Health signals inform priorities.</p></div><div><span>STYLE</span><strong>Human + structured</strong><p>Clear communication with disciplined follow-through.</p></div></div></section>
 
