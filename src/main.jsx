@@ -48,7 +48,24 @@ function App(){
      <div className="hero-actions"><button className="primary" onClick={()=>nav('meet-me')}>Meet me <ArrowRight size={18}/></button><a className="secondary" href="/Goodness_Nwafor_CSM_Resume_Final.pdf" target="_blank" rel="noreferrer">View résumé <FileText size={16}/></a></div>
      <div className="hero-proof-label">WHAT I FOCUS ON</div><div className="proof"><div><strong>Onboard</strong><span>Readiness · enablement · first value</span></div><div><strong>Understand</strong><span>Usage · sentiment · stakeholders</span></div><div><strong>Act</strong><span>Risk · adoption · retention</span></div></div>
     </div>
-    <div className="hero-card"><div className="card-glow"></div><img className="profile-photo" src="/profile-headshot.jpg" alt="src="/profile-headshot.jpg"/><p className="card-label">CUSTOMER SUCCESS PROFILE</p><h2>Signals before symptoms.
+   <div className="hero-card">
+  <div className="card-glow"></div>
+
+  <img
+    className="profile-photo"
+    src="/profile-headshot.jpg"
+    alt="Goodness Chizurum Nwafor"
+  />
+
+  <p className="card-label">
+    CUSTOMER SUCCESS PROFILE
+  </p>
+
+  <h2>
+    Signals before symptoms.
+    Systems before scripts.
+    Outcomes before excuses.
+  </h2>CUSTOMER SUCCESS PROFILE</p><h2>Signals before symptoms.
 Systems before scripts.
 Outcomes before excuses.</h2>
      <div className="signal"><span>01</span><div><b>Onboard</b><small>Readiness · enablement · first value</small></div></div><div className="signal"><span>02</span><div><b>Understand</b><small>Usage · sentiment · stakeholders</small></div></div><div className="signal"><span>03</span><div><b>Act</b><small>Risk · adoption · retention</small></div></div>
