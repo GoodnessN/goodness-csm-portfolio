@@ -65,6 +65,15 @@ function App(){
     Signals before symptoms.
     Systems before scripts.
     Outcomes before excuses.
+  </h2>
+  <p className="card-label">
+    CUSTOMER SUCCESS PROFILE
+  </p>
+
+  <h2>
+    Signals before symptoms.
+    Systems before scripts.
+    Outcomes before excuses.
   </h2>CUSTOMER SUCCESS PROFILE</p><h2>Signals before symptoms.
 Systems before scripts.
 Outcomes before excuses.</h2>
