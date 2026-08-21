@@ -118,7 +118,7 @@ function App(){
 
       <div className="meet-photo-wrap">
         <img
-          src="/meet-me-photo.jpg"
+          src="/office-meet.jpg"
           alt="Goodness Chizurum Nwafor"
         />
       </div>
