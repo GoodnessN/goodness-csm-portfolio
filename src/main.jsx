@@ -4,10 +4,71 @@ import {ArrowRight, BriefcaseBusiness, CheckCircle2, ExternalLink, FileText, Mai
 import './styles.css';
 
 const work = [
-  {title:'Danfo Digital Solutions',type:'Group Case Study · HubSpot Account Health',tag:'Churn Prevention',summary:'A last-mile logistics SaaS account showing silent-churn signals one month before renewal.',facts:['6 / 22 active users','12% renewal probability','₦1.8M ARR at risk (~$1,335 USD)','73 days since CSM check-in'],approach:'Interpreted adoption, engagement, sentiment and stakeholder signals; identified champion loss and competitive risk; structured a proactive recovery plan.',file:'/work-samples/Danfo%20Digital%20Solution_Complete%20Report.pdf'},
-  {title:'Champion Resignation Response',type:'Individual Assignment · TAM',tag:'Account Risk',summary:'A 24-hour response framework for an account whose internal product champion has resigned.',facts:['24-hour response plan','4 stakeholder groups','3 recovery tracks','30-day stabilization'],approach:'The response prioritises context first, relationship continuity second, and coordinated internal escalation within the first 24 hours.',file:'/work-samples/Goodness_Chizurum_CSM_TAM_Assignment.pdf'},
-  {title:'Pre-boarding Strategy',type:'Individual Assignment · Customer Onboarding',tag:'Onboarding',summary:'A practical view of what must happen before a CRM customer enters the formal onboarding phase.',facts:['4 pre-boarding phases','3 readiness checks','2 stakeholder maps','1 first-value plan'],approach:'Defines pre-boarding as the point where the CS team establishes strategic clarity, validates technical readiness and prevents avoidable onboarding failure.',file:'/work-samples/CSM_Assignment_4_Phase_1_Preboarding.pdf'},
-  {title:'Enterprise Account Recovery — MTN × Dangote',type:'Group Project · Enterprise B2B Customer Success',tag:'TAM / Enterprise',simulated:true,summary:'An enterprise case built around RICE prioritisation, reactive remediation, proactive value and a 30/60/90-day execution roadmap.',facts:['₦480M enterprise account (~$355,600 USD)','RICE prioritisation','Reactive + proactive tracks','30 / 60 / 90-day roadmap'],approach:'Sequences outage remediation before expansion while maintaining the commercial thread, with explicit ownership across CSM and AM responsibilities.',file:'/work-samples/MTN_Master_Solution.pdf'}
+  {
+    title:'Danfo Digital Solutions',
+    type:'Real Case Study · Customer Success / Account Health',
+    tag:'CHURN PREVENTION',
+    real:true,
+    summary:'Customer success case focused on identifying silent-churn signals, diagnosing account health deterioration and building a recovery plan before renewal.',
+    facts:['Account health assessment','Churn-risk analysis','HubSpot recovery plan','Stakeholder re-engagement'],
+    approach:'Account health, root-cause analysis, recovery planning and stakeholder communication.',
+    file:'/work-samples/Danfo%20Digital%20Solution_Complete%20Report.pdf'
+  },
+
+  {
+    title:'MTN Nigeria × Dangote Group',
+    type:'Real Case Study · Enterprise Customer Success',
+    tag:'ENTERPRISE RECOVERY',
+    real:true,
+    summary:'Enterprise customer success case focused on service reliability, relationship recovery, prioritisation and protecting a high-value account.',
+    facts:['₦480M enterprise account','RICE prioritisation','Reactive + proactive tracks','30 / 60 / 90-day roadmap'],
+    approach:'Sequenced technical remediation, relationship recovery and commercial planning to protect the enterprise relationship.',
+    file:'/work-samples/MTN_Master_Solution_v2-1.pdf'
+  },
+
+  {
+    title:'TYM Bank × LendWise',
+    type:'Real Case Study · Technical Account Management',
+    tag:'ADOPTION & EXPANSION',
+    real:true,
+    summary:'TAM case focused on regional adoption, technical risk, regulatory compliance and expansion readiness across a multi-site banking operation.',
+    facts:['₦42M annual contract','61% overall adoption','₦18M expansion opportunity','14 active branches'],
+    approach:'Combined adoption recovery, technical-risk management, compliance remediation and expansion gating.',
+    file:'/work-samples/TYM_LendWise_V1_ForestExecutive.pptx'
+  },
+
+  {
+    title:'Zenith Pharmaceuticals',
+    type:'Real Case Study · Customer Success / Account Recovery',
+    tag:'ACCOUNT RECOVERY',
+    real:true,
+    summary:'Customer success case focused on account recovery, stakeholder management and rebuilding customer value.',
+    facts:['Account recovery','Stakeholder strategy','Customer value','Execution roadmap'],
+    approach:'Structured account recovery around customer needs, stakeholder alignment and disciplined execution.',
+    file:'/work-samples/Zenith_Pharmaceuticals_Recovery_Deck.pdf'
+  },
+
+  {
+    title:'Champion Resignation Response',
+    type:'Individual Assignment · TAM',
+    tag:'ASSIGNMENT',
+    assignment:true,
+    summary:'A structured response framework for protecting an account after the loss of an internal product champion.',
+    facts:['24-hour response plan','Stakeholder mapping','Recovery tracks','30-day stabilisation'],
+    approach:'Context first, relationship continuity second, coordinated internal escalation immediately after.',
+    file:'/work-samples/Goodness_Chizurum_CSM_TAM_Assignment.pdf'
+  },
+
+  {
+    title:'Pre-boarding Strategy',
+    type:'Individual Assignment · Customer Onboarding',
+    tag:'ASSIGNMENT',
+    assignment:true,
+    summary:'A structured approach to preparing a CRM customer for onboarding, reducing friction before formal implementation begins.',
+    facts:['4 pre-boarding phases','Readiness checks','Stakeholder mapping','First-value planning'],
+    approach:'Establish strategic clarity, validate readiness and remove avoidable onboarding risk before implementation.',
+    file:'/work-samples/CSM_Assignment_4_Phase_1_Preboarding.pdf'
+  }
 ];
 
 const skills = [
@@ -150,7 +211,97 @@ function App(){
     <div className="timeline-item"><div className="timeline-dot"></div><div className="timeline-meta">2018 — 2021</div><h3>Customer Experience Coordinator & Stakeholder Liaison <span>· University of Agriculture, Makurdi</span></h3><p>Managed stakeholder inquiries and complaints, coordinated onboarding and orientation programmes, maintained institutional records and facilitated training seminars and workshops.</p></div>
    </div></div></section>
 
-   <section id="work" className="section"><div className="container"><div className="section-top"><div><p className="section-kicker">03 · SELECTED WORK</p><h2>Evidence of how I think.</h2></div><p>These are presented as training assignments, case studies and work samples. Individual and group work are clearly identified.</p></div><div className="work-grid">{work.map((item,i)=><article className="work-card" key={item.title}><div className="work-top"><span className="tag">{item.tag}</span><span className="index">0{i+1}</span></div>{item.simulated&&<div className="simulated">Simulated case study — certification training exercise.</div>}<h3>{item.title}</h3><p className="type">{item.type}</p><p>{item.summary}</p><div className="facts">{item.facts.map(f=><span key={f}><CheckCircle2 size={14}/>{f}</span>)}</div><button className="read-btn" onClick={()=>setOpen(i)}>Read case <ArrowRight size={16}/></button></article>)}</div></div></section>
+   <section id="work" className="section">
+  <div className="container">
+
+    <div className="section-top">
+      <div>
+        <p className="section-kicker">03 · FEATURED CASE STUDIES</p>
+        <h2>Real cases. Real decisions. Real evidence.</h2>
+      </div>
+
+      <p>
+        Selected customer success and technical account management case studies
+        showing how I diagnose risk, structure action and connect customer outcomes
+        to business value.
+      </p>
+    </div>
+
+    <div className="work-grid">
+      {work.filter(item => item.real).map((item) => (
+        <article className="work-card" key={item.title}>
+
+          <div className="work-top">
+            <span className="tag">{item.tag}</span>
+            <span>{String(work.filter(w => w.real).indexOf(item) + 1).padStart(2, '0')}</span>
+          </div>
+
+          <h3>{item.title}</h3>
+          <p className="work-type">{item.type}</p>
+          <p>{item.summary}</p>
+
+          <div className="facts">
+            {item.facts.map((fact) => (
+              <span key={fact}>{fact}</span>
+            ))}
+          </div>
+
+          <button
+            className="read-btn"
+            onClick={() => setOpen(work.indexOf(item))}
+          >
+            Read case <ArrowRight size={16} />
+          </button>
+
+        </article>
+      ))}
+    </div>
+
+
+    <div className="section-top assignment-heading">
+      <div>
+        <p className="section-kicker">SELECTED ASSIGNMENTS</p>
+        <h2>Additional evidence of how I think.</h2>
+      </div>
+
+      <p>
+        Structured CSM and TAM assignments demonstrating account strategy,
+        onboarding, stakeholder management and response planning.
+      </p>
+    </div>
+
+    <div className="work-grid">
+      {work.filter(item => item.assignment).map((item) => (
+        <article className="work-card" key={item.title}>
+
+          <div className="work-top">
+            <span className="tag">{item.tag}</span>
+            <span>ASSIGNMENT</span>
+          </div>
+
+          <h3>{item.title}</h3>
+          <p className="work-type">{item.type}</p>
+          <p>{item.summary}</p>
+
+          <div className="facts">
+            {item.facts.map((fact) => (
+              <span key={fact}>{fact}</span>
+            ))}
+          </div>
+
+          <button
+            className="read-btn"
+            onClick={() => setOpen(work.indexOf(item))}
+          >
+            View assignment <ArrowRight size={16} />
+          </button>
+
+        </article>
+      ))}
+    </div>
+
+  </div>
+</section>
 
    <section className="section testimonials"><div className="container"><div className="section-top"><div><p className="section-kicker">RECOMMENDATIONS</p><h2>What people say.</h2></div><p>Placeholder structure for recommendations from managers, colleagues and collaborators.</p></div><div className="testimonial-grid"><article><div className="quote-mark">“</div><p>Goodness brings structure to complex customer situations and follows through until the outcome is clear.</p><b>Manager / Team Lead</b><span>Professional reference</span></article><article><div className="quote-mark">“</div><p>She combines customer empathy with strong operational discipline and communicates clearly across teams.</p><b>Colleague</b><span>Cross-functional collaborator</span></article><article><div className="quote-mark">“</div><p>A thoughtful customer advocate who understands both the human relationship and the systems behind it.</p><b>Stakeholder</b><span>Customer-facing collaboration</span></article></div></div></section>
 
