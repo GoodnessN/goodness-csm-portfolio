@@ -319,7 +319,91 @@ function App(){
    <section id="contact" className="contact"><div className="container contact-inner"><div><p className="section-kicker">06 · CONTACT</p><h2>Let's build better customer experiences.</h2><p>Open to Customer Success, Onboarding and Technical Account Management opportunities.</p></div><div className="contact-links"><a href="mailto:Goodnesschizurum41@gmail.com"><Mail size={20}/><span>Email me</span><ArrowRight/></a><a href="https://linkedin.com/in/goodness-nwafor" target="_blank" rel="noreferrer"><span style={{fontWeight:800,fontSize:'18px'}}>in</span><span>LinkedIn</span><ArrowRight/></a></div></div></section>
   </main>
   <footer><div className="container footer-inner"><span>© 2026 Goodness Chizurum Nwafor</span><span>Customer Success · Onboarding · TAM</span></div></footer>
-  {open!==null&&<div className="modal-backdrop" onClick={()=>setOpen(null)}><div className="modal" onClick={e=>e.stopPropagation()}><button className="modal-close" onClick={()=>setOpen(null)}><X/></button><span className="tag">{work[open].tag}</span>{work[open].simulated&&<div className="simulated modal-simulated">Simulated case study — certification training exercise.</div>}<h2>{work[open].title}</h2><p className="type">{work[open].type}</p><p>{work[open].summary}</p><h4>Approach</h4><p>{work[open].approach}</p><div className="facts modal-facts">{work[open].facts.map(f=><span key={f}><CheckCircle2 size={14}/>{f}</span>)}</div><a className="primary modal-link" href={work[open].file} target="_blank" rel="noreferrer">Open full work sample <FileText size={17}/></a></div></div>}
- </div>
+  {open!==null&&<div className="modal-backdrop" onClick={()=>setOpen(null)}>
+  <div className="modal" onClick={e=>e.stopPropagation()}>
+
+    <button className="modal-close" onClick={()=>setOpen(null)}>
+      <X/>
+    </button>
+
+    <span className="tag">{work[open].tag}</span>
+
+    {work[open].simulated&&(
+      <div className="simulated modal-simulated">
+        Simulated case study — certification training exercise.
+      </div>
+    )}
+
+    <h2>{work[open].title}</h2>
+
+    <p className="type">{work[open].type}</p>
+
+    <p>{work[open].summary}</p>
+
+    <h4>Approach</h4>
+
+    <p>{work[open].approach}</p>
+
+    <div className="facts modal-facts">
+      {work[open].facts.map(f=>(
+        <span key={f}>
+          <CheckCircle2 size={14}/>
+          {f}
+        </span>
+      ))}
+    </div>
+
+    {work[open].evidence?.length>0&&(
+      <div className="case-evidence">
+
+        <div className="case-evidence-heading">
+          <span className="section-kicker">EVIDENCE & WORKFLOW</span>
+          <h4>How the work was executed.</h4>
+          <p>
+            Supporting evidence from the tools, communications and workflows
+            used throughout the case.
+          </p>
+        </div>
+
+        <div className="evidence-grid">
+          {work[open].evidence.map((evidence)=>(
+            <a
+              className="evidence-card"
+              key={evidence.label}
+              href={`${work[open].file}#page=${evidence.page}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span className="evidence-number">
+                {String(evidence.page).padStart(2,'0')}
+              </span>
+
+              <div>
+                <strong>{evidence.label}</strong>
+                <small>
+                  View supporting evidence · Page {evidence.page}
+                </small>
+              </div>
+
+              <ArrowRight size={16}/>
+            </a>
+          ))}
+        </div>
+
+      </div>
+    )}
+
+    <a
+      className="primary modal-link"
+      href={work[open].file}
+      target="_blank"
+      rel="noreferrer"
+    >
+      Open full work sample
+      <FileText size={17}/>
+    </a>
+
+  </div>
+</div>}
 }
 createRoot(document.getElementById('root')).render(<App/>);
