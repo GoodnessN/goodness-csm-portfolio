@@ -11,8 +11,15 @@ const work = [
     real:true,
     summary:'Customer success case focused on identifying silent-churn signals, diagnosing account health deterioration and building a recovery plan before renewal.',
     facts:['Account health assessment','Churn-risk analysis','HubSpot recovery plan','Stakeholder re-engagement'],
-    approach:'Account health, root-cause analysis, recovery planning and stakeholder communication.',
-    file:'/work-samples/Danfo%20Digital%20Solution_Complete%20Report.pdf'
+approach:'Account health, root-cause analysis, recovery planning and stakeholder communication.',
+evidence:[
+  {label:'Stakeholder communications',page:89},
+  {label:'Slack communications',page:46},
+  {label:'ClickUp execution',page:50},
+  {label:'Freshdesk / HubSpot support',page:60},
+  {label:'HubSpot CRM evidence',page:62}
+],
+file:'/work-samples/Danfo%20Digital%20Solution_Complete%20Report.pdf'
   },
 
   {
